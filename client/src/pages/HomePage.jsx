@@ -13,7 +13,7 @@ function HomePage() {
       setIsError(false);
       setIsLoading(true);
       const getTripFromServer = await axios.get(
-        `http://localhost:4001/trips?keywords=${keywords}`
+        `https://travelpage-data-techup.up.railway.app/trips?keywords=${keywords}`
       );
       // console.log(getTripFromServer.data.data);
       setTrips(getTripFromServer.data.data);
